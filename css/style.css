@@ -1,0 +1,234 @@
+:root {
+    --background-color: #272B30;
+    --main-color: #3A497B;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.bg-fix {
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #09c;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #09c;
+}
+
+nav {
+    margin-top: -40px;
+    z-index: 9999;
+}
+
+.border-fix {
+    border: solid 1px #0000002a;
+}
+.game{
+    filter: grayscale(0.8);
+    transition: 0.5s;
+}
+.game:hover{
+    transform: scale(1.05);
+    filter: none;
+}
+.game-info h3 {
+    font-size: 18px;
+}
+
+.game-info p {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+}
+
+.game-desc p {
+    color: #FFFF;
+    height: 120px;
+}
+
+.game-footer {
+    border-top: solid 1px #0000002a;
+}
+
+.game-footer p {
+    background-color: #32383E;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.loading{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3A497B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+}
+.sk-cube-grid {
+    width: 60px;
+    height: 60px;
+}
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+
+.spinner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000071;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
