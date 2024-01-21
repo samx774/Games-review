@@ -55,7 +55,7 @@ nav {
     border: solid 1px #0000002a;
 }
 .game{
-    filter: grayscale(0.8);
+    filter: grayscale(0.7);
     transition: 0.5s;
 }
 .game:hover{
